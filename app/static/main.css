@@ -1,0 +1,88 @@
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+    background: #e6e6e6;
+}
+
+/* <-----Navbar ---> */
+header{
+    background: rgb(237, 240, 255);
+}
+nav{
+    min-height: 100px;
+
+}
+.navbar-brand {
+	font-size: 2.2rem;
+    text-transform: uppercase;
+}
+ul li.nav-item:hover a.nav-link, li.nav-item.active a{
+    color: #f5a244 !important;
+
+}
+
+.wf-container-outer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Continent Tabs */
+.wf-tabs-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: #69c6ba;
+}
+
+.wf-tab-link {
+    padding: 30px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    font-size: 1.0rem;
+    height: 100%;
+}
+
+.wf-tab-link:hover { color: white; }
+
+.wf-tab-link-li {
+    background: transparent;
+    flex: 1 1 auto;
+    transition: all 0.3s ease;
+}
+
+.wf-tab-link:hover{
+    background-color:#f5a244;
+}
+.wf-tab-link.active:hover{
+    background-color:#f5a244;
+}
+.wf-tab-link.active {
+    background: #eca34f;
+}
+
+#main-content{
+    min-height: 600px;
+    /* min-height: 80vh; */
+    /* border: 1px solid salmon;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    max-height: 200px;
+    min-height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #69c6ba;
+    width:100%;
+}
