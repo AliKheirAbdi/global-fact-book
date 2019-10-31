@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Global Fact Book</title>
+
+<!-- load stylesheets -->
+<link rel="stylesheet" href="bootstrap.min.css"> <!-- Bootstrap style -->
+<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">World Fact Book</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Did you Know?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Top 10 Lists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Travel Guides</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+ </nav>
+</header>
+<br>
+    <div class="container">
+    <div class="card text-center">
+      <div class="card-header">
+              <div class="flag">
+              <img src="img/Flag_of_Kenya.svg" class="rounded float-left" width="100px" height="50px">
+            </div>
+        <h1>KENYA</h1>
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-geo" role="tab" aria-controls="nav-geo" aria-selected="true">Geographical</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-gov" role="tab" aria-controls="nav-gov" aria-selected="false">Governance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-eco" role="tab" aria-controls="nav-eco" aria-selected="false">Economic</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-soc" role="tab" aria-controls="nav-soc" aria-selected="false">Social</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-Political" role="tab" aria-controls="nav-political" aria-selected="false">Political</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-know" role="tab" aria-controls="nav-know" aria-selected="false">Did you Know?</a>
+            </li>
+        </ul>
+       </div>
+      </nav>
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#nav-geo" role="tab" aria-controls="nav-geo" aria-selected="true">Geographical</a>           
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-gov" role="tab" aria-controls="nav-gov" aria-selected="true">Governance</a>
+          <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-eco" role="tab" aria-controls="nav-eco" aria-selected="false">Economic</a>
+          <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-soc" role="tab" aria-controls="nav-soc" aria-selected="false">Social</a>
+          <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-pol" role="tab" aria-controls="nav-pol" aria-selected="true">Political</a>
+        </div>
+      </nav>    
+        <div class="tab-pane fade" id="nav-soc" role="tabpanel" aria-labelledby="nav-soc-tab">
+                <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-gov" role="tabpanel" aria-labelledby="nav-gov-tab">
+                      <div class="card-body">
+                          <img src="img/KE-map.gif" class="rounded float-left" width="270px">
+                              <div class="container" style="font-size: 14px">
+                                  <div class="row">
+                                      <p>Longitude:</p>
+                                  </div>
+                                  <div class="row">
+                                          <p>Latitude:</p>
+                                      </div>
+                                  <div class="row">
+                                      <p>Sub Region:</p>
+                                  </div>
+                                  <div class="row">
+                                      <p>Timezone:</p>
+                                  </div>
+                                  <div class="row">
+                                      <p>Borders:</p>
+                                  </div>
+                                  <div class="row">
+                                      <p>Borders:</p>
+                                  </div>
+                                  <div class="row">
+                                      <p>Regional Block:</p>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                  </div>
+             </div>
+        </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<div class="footer">
+    &copy 2019
+</div>
+</body>
+
+</html>
