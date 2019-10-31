@@ -1,0 +1,14 @@
+south America {
+    "ar" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AR-map.gif"
+    "bl" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BL-map.gif"
+    "br" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BR-map.gif"
+    "ci" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CI-map.gif"
+    "co" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/CO-map.gif"
+    "ec" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/EC-map.gif"
+    "gy" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/GY-map.gif"
+    "pa" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PA-map.gif"
+    "pe" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PE-map.gif"
+    "ns" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NS-map.gif"
+    "uy" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/UY-map.gif"
+    "ve" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/VE-map.gif"
+}

@@ -1,0 +1,16 @@
+Australia = {
+    "as" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/AS-map.gif"
+    "fj" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FJ-map.gif"
+    "kr" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/KR-map.gif"
+    "rm" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/RM-map.gif"
+    "fm" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/FM-map.gif"
+    "nr" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NR-map.gif"
+    "nz" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NZ-map.gif"
+    "ps" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PS-map.gif"
+    "pp" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/PP-map.gif"
+    "ws" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/WS-map.gif"
+    "bp" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/BP-map.gif"
+    "tn" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TN-map.gif"
+    "tv" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/TV-map.gif"
+    "nh" = "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/NH-map.gif"
+}
