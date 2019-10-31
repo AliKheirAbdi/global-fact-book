@@ -1,0 +1,25 @@
+{% macro display_continent_image(continent_name, sub_region) %}
+{% if sub_region and sub_region =="Northern America"%}
+    <img src="{{url_for('static',filename='continents/north_america.png')}}" style="width:120px;height:120px;" alt="map">
+{% elif sub_region and sub_region == 'South America' %}
+    <img src="{{url_for('static',filename='continents/south_america.png')}}" style="width:120px;height:120px;" alt="map">
+{% elif continent_name == 'asia' %}
+      <img src="{{url_for('static',filename='continents/asia.png')}}" style="width:120px;height:120px;" alt="map">
+{% elif continent_name == 'africa' %}
+     <img src="{{url_for('static',filename='continents/africa.png')}}" style="width:120px;height:120px;" alt="map">
+{% elif continent_name == 'oceania' %}
+    <img src="{{url_for('static',filename='continents/oceania.png')}}" style="width:120px;height:120px;" alt="map">
+{% elif continent_name == 'europe' %}
+    <img src="{{url_for('static',filename='continents/europe.png')}}" style="width:120px;height:120px;" alt="map">
+{% endif%}
+{% endmacro%}
+
+{% macro display_continent_title(continent,sub_region) %}
+      {% if sub_region and sub_region == 'South America' %}
+        {{sub_region}}
+      {% elif sub_region and sub_region == 'Northern America'%}
+        {{sub_region}}
+      {% else %}
+        {{continent.upper()}}
+      {% endif %}
+{% endmacro %}

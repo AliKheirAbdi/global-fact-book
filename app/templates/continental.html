@@ -1,92 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Global Fact Book</title>
-
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!-- Bootstrap style -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">World Fact Book</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Did you Know?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Top 10 Lists</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Travel Guides</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </nav>
-    </header>
+{% extends 'layout.html'%}
+{% import 'macros.html' as macro %}
+{% block content %}
     <div class="wf-container-outer" id='main-content'>
         <div class="container">
             <div class="col" style="font-size: 40px; font-weight: bold; text-align:center">
-                AFRICA 
-              <img src="includes/img/afrimap.jpg" style="width:120px;height:120px;" alt="africa">
+                {{macro.display_continent_title(continent,sub_region)}}
+                {{macro.display_continent_image(continent,sub_region)}}
             </div>
-            <style>
-                .flex-container {
-                  display: flex;
-                  flex-wrap: wrap;
-                }
-                
-                .flex-container> div {
-                  background-color: #f1f1f1;
-                  width: 130px;
-                  margin: 3px;
-                  text-align: center;
-                  line-height: 35px;
-                  font-size: 12px;
-                }
-                </style>
-                </head>
-                <body>
-                
-                <div class="flex-container">
-                  <div>Algeria</div>
-                </div>
-    <br>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-    <footer class="sticky-footer">
-        <p class="foot">Copyright © <span class="wf-current-year">2018</span>
-            Designed by <a >.......</a></p>
-    </footer>
-</body>
-
-</html>
+            <div class="flex-container">
+                {% for country in countries %}
+                    <div class="shadow-sm p-5 mb-5 bg-light rounded">
+                        {{country.name}}
+                        <img style="width:70px; height:50px"src="{{country.flag}}" alt="flag">
+                    </div>
+                {%endfor%}
+            </div>
+        </div>
+{% endblock %}
