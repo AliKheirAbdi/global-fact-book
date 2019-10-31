@@ -1,10 +1,11 @@
 {% extends 'layout.html'%}
+{% import 'macros.html' as macro %}
 {% block content %}
     <div class="wf-container-outer" id='main-content'>
         <div class="container">
             <div class="col" style="font-size: 40px; font-weight: bold; text-align:center">
-                {{continent.upper()}}
-              <img src="includes/img/afrimap.jpg" style="width:120px;height:120px;" alt="africa">
+                {{macro.display_continent_title(continent,sub_region)}}
+                {{macro.display_continent_image(continent,sub_region)}}
             </div>
             <div class="flex-container">
                 {% for country in countries %}

@@ -10,5 +10,6 @@ def home():
 @main.route('/continental/<continent>')
 @main.route('/continental/<continent>/<sub_region>')
 def continent(continent, sub_region = None):
-    countries = get_countries_by_continents(continent)
-    return render_template('continental.html',countries = countries, continent = continent)
+    print(sub_region)
+    countries = get_countries_by_continents(continent,sub_region)
+    return render_template('continental.html',countries = countries, continent = continent, sub_region= sub_region)
