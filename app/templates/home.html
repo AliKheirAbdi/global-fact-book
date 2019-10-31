@@ -1,10 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
-</html>
+{% extends 'layout.html'%}
+{% block content %}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">WORLD FACT BOOK</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Did you know</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Top 10 Lists</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <div id='main-content'>
+        <div class="controller"></div>
+        <div class="wf-container-outer">
+            <ul class="nav nav-pills wf-tabs-links">
+                <li class="wf-tab-link-li">
+                    <a href="#1a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/north-america.png')}}" alt="North America" class="img-fluid">
+                        North America
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#2a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/south-america.png')}}" alt="South America" class="img-fluid">
+                        South America
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#3a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/europe.png')}}" alt="Europe" class="img-fluid">
+                        Europe
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#4a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/asia.png')}}" alt="Asia" class="img-fluid">
+                        Asia
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#5a" data-toggle="tab" class="wf-tab-link active">
+                        <img src="{{url_for('static', filename='img/africa.png')}}" alt="Africa" class="img-fluid">
+                        Africa
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#6a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/australia.png')}}" alt="Australia" class="img-fluid">
+                        Oceania
+                    </a>
+                </li>
+                <li class="wf-tab-link-li">
+                    <a href="#7a" data-toggle="tab" class="wf-tab-link">
+                        <img src="{{url_for('static', filename='img/antartica.png')}}" alt="Antartica" class="img-fluid">
+                        Antarctica
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            &copy; 2019
+        </div>
+    </div> <!-- .main-content -->
+{% endblock content%}
